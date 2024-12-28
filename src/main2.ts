@@ -46,7 +46,7 @@ class Controller {
             maxTries -= 1;
         }
         alert('Game over!');
-        //return {x:0, y:0};
+        return {x:0, y:0};
     }
 
     show() {
@@ -55,11 +55,11 @@ class Controller {
         for (let i = 0; i <= this.boardSize; i++) {
             for (let j = 0; j <= this.boardSize; j++) {
                 if (i == this.randomPoint.x && j == this.randomPoint.y) {
-                    cellDivs += `<div id='newCell'   style='left: j*150 px; top: i*150px; background-color:${getColor(this.board[i][j])};'>${this.board[i][j] ?? ''}</div>`;
+                    cellDivs += `<div id='newCell'   style=' background-color:${getColor(this.board[i][j])};'>${this.board[i][j] ?? ''}</div>`;
                     console.log("yes",);
                 }
                 else{
-                    cellDivs += `<div id='cell' style='left: j*150 px; top: i*150px; background-color:${getColor(this.board[i][j])};'>${this.board[i][j] ?? ''}</div>`;
+                    cellDivs += `<div id='cell' style=' background-color:${getColor(this.board[i][j])};'>${this.board[i][j] ?? ''}</div>`;
                 }
 
             }

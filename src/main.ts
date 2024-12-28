@@ -49,15 +49,15 @@ class Controller {
 
     show() {
         let cellDivs = "";
-        let animate = document.getElementById("cell");
+        //let animate = document.getElementById("cell");
 
         for (let i = 0; i <= this.boardSize; i++) {
             for (let j = 0; j <= this.boardSize; j++) {
-                let cell = document.getElementById("position");
-                let x = 5;
-                let y = 5;
-                cell.style.left = (y + j*5).toString() + 'px' ;
-                cell.style.top = (x + i*5).toString() + 'px';
+                //let cell = document.getElementById("position");
+                //let x = 5;
+                //let y = 5;
+                //cell.style.left = (y + j*5).toString() + 'px' ;
+                //cell.style.top = (x + i*5).toString() + 'px';
                 if (this.board[i][j] == null) {
                     cellDivs += `<div id='cell' id="position" style='background-color:${getColor(this.board[i][j])};'>${this.board[i][j] ?? ''}</div>`;
                 }
