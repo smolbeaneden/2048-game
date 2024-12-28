@@ -1,8 +1,9 @@
 {
-  "name": "2048",
+  "name": "2048game",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://smolbeaneden.github.io/2048-game/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
