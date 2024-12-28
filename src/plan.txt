@@ -1,0 +1,191 @@
+תמיד מראה ש row בגודל 1
+
+למטה נותן רק שורה אחת
+
+
+הx וה y הפוכים
+
+ליצור רשימה עם נקודה התחלתית ונקודה סופית
+
++4
+
+
+לעשות רשימה על הכל כולל null ובסוף להוריד לפני האנימציה
+https://www.quora.com/What-are-some-ways-to-animate-an-element-from-one-position-to-another-using-only-CSS-no-JavaScript
+
+
+/* define the transition */
+#element {
+  transition: left 1s, top 1s;
+}
+
+/* change the element's position and trigger the transition */
+#element:hover {
+  left: 100px;
+  top: 100px;
+}
+
+/* define the keyframes for the animation */
+@keyframes move {
+  from { left: 0; top: 0; }
+  to { left: 100px; top: 100px; }
+}
+
+/* apply the animation to the element */
+#element {
+  animation: move 1s;
+}
+
+json
+
+
+
+var element = document.getElementById("yourElement");
+element.style.left = x + "px";
+element.style.top = y + "px";
+
+
+
+translate
+
+
+<div  id="cell"> <script>
+                  
+                </script></div>
+
+
+p tag to hold content
+
+
+new game button
+
+if startGame
+ board null
+
+
+
+גודל של הפונט ב1024 2048
+
+
+
+ document.getElementById('message').innerHTML = lengthOfName;
+ <p id='message'></p>
+
+
+
+  <div id="cell"><p id="num"></p><script>
+                  document.documentElement.cell.setProperty("--y-y", "2%");
+                  document.documentElement.cell.setProperty("--x-x", "2%");
+                </script></div> 
+
+
+                <div id="demo">
+                  <script>
+                    var x = "", i;
+                    for(i=0; i<16; i++){
+                      x = "<div id = 'cell'>2</div>";
+                    }
+                    document.getElementById("demo").innerHTML = x;
+
+                  </script>
+                </div>
+
+
+                document.documentElement.cell.setProperty("--x-x", "2%");
+
+
+                <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+            <div id="cell"><p id="num"></p></div> 
+
+
+
+
+
+
+
+
+
+  function getDirection(){
+    document.onkeydown = (event) => {   
+      switch(event.key){
+          case "ArrowLeft": // j=0 go through i's
+              goThorughBlocks(0, 0, this.boardSize, this.boardSize, "left");
+              break;
+          case "ArrowRight": // j=0 go through i's
+              goThorughBlocks(this.boardSize, 0, 0, this.boardSize, "right");
+              break;
+          case "ArrowUp": // i=0 go through j's
+              goThorughBlocks(0, 0, this.boardSize, this.boardSize,  "up");
+              break;
+          case "ArrowDown": // i=3 go through j's
+              goThorughBlocks(0, this.boardSize, this.boardSize, 0, "down");
+              break;
+      }
+  }
+}
+
+
+  function goThorughBlocks(i, j, top_i, top_j, kind){ //i: x values, j: y values
+      if(kind == "left"){
+        for(j; j <= top_j; j++){
+          for(i; i <= top_i ; i++){
+            moveBlocks();
+          }
+        }
+    }
+      if(kind == "right"){
+        for(j; j <= top_j; j++){
+          for(i; i >= top_i ; i--){
+            moveBlocks();
+          }
+      }
+    }
+      if(kind == "up"){
+        for(i; i <= top_i ; i++){
+          for(j; j <= top_j; j++){
+            moveBlocks();
+          }
+        }
+      }
+      if(kind == "down"){
+        for(i; i <= top_i ; i++){
+          for(j; j >= top_j; j--){
+            moveBlocks();
+          }
+        }
+      }
+    }
+    board = board1;
+
+
+
+
+
+    if left
+    array 
+
+
+
+
+    -moz-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
